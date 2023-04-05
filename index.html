@@ -1,11 +1,51 @@
+<!DOCTYPE html>
+
 <html>
     <head>
-        <title>Sample Title</title>
+        <title>Hello World!</title>
+        <script>
+            Switch = ()
+        </script>
     </head>
 
     <body>
         <div class="Circle">
             <h1 class="Header">Hello World!</h1>
+        </div>
+
+        <br><br><br><br><br>
+
+        <div class="Table">
+            <div class="Cell" onclick="Switch()">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
+            <div class="Cell">&nbsp</div>
         </div>
     </body>
 </html>
@@ -49,5 +89,24 @@
         font-family: monospace;
         font-size: 20px;
         color: white;
+    }
+
+    .Table {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .Cell {
+        border: 2px solid white;
+        border-radius: 10px;
+        font-size: 40px;
+        background-color: rgba(0,0,0,0);
+        transition-duration: 0.2s;
+    }
+
+    .Cell:hover {
+        background-color: rgba(255,255,255,0.5);
+        cursor: pointer;
+        scale: 1.2;
     }
 </style>
