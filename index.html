@@ -4,7 +4,13 @@
     <head>
         <title>Hello World!</title>
         <script>
-            Switch = ()
+            toggle = false
+
+            const SwitchColor = (id) => {
+                toggle = !toggle
+                box = document.getElementById(id)
+                box.style.background = toggle? "white": "rgb(0,0,0,0)"
+            }
         </script>
     </head>
 
@@ -16,8 +22,8 @@
         <br><br><br><br><br>
 
         <div class="Table">
-            <div class="Cell" onclick="Switch()">&nbsp</div>
-            <div class="Cell">&nbsp</div>
+            <div class="Cell" onclick="SwitchColor(1)" id="1">&nbsp</div>
+            <div class="Cell" onclick="SwitchColor(2)" id="2">&nbsp</div>
             <div class="Cell">&nbsp</div>
             <div class="Cell">&nbsp</div>
             <div class="Cell">&nbsp</div>
@@ -101,12 +107,16 @@
         border-radius: 10px;
         font-size: 40px;
         background-color: rgba(0,0,0,0);
-        transition-duration: 0.2s;
+        transition-duration: 0.1s;
     }
 
     .Cell:hover {
         background-color: rgba(255,255,255,0.5);
         cursor: pointer;
         scale: 1.2;
+    }
+
+    .Cell:visited {
+        background-color: white;
     }
 </style>
